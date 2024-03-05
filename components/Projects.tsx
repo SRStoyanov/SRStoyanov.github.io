@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
       repoLink: "-",
       liveLink: "https://www.everypoem.com",
       techStack: ["HTML", "CSS", "JavaScript"],
-      image: "/EveryPoem-tight.png",
+      image: "/public/EveryPoem-tight.png",
     },
     {
       title: "VoteVis v.Alpha",
@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
       repoLink: "-",
       liveLink: "https://www.votevis.org",
       techStack: ["HTML", "CSS", "JavaScript"],
-      image: "/VoteVis.png",
+      image: "/public/VoteVis.png",
     },
     // Add more projects here...
   ];
