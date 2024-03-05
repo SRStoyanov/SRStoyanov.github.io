@@ -30,6 +30,7 @@ const Project: React.FC<ProjectProps> = ({
             alt={title}
             width={500}
             height={300}
+            unoptimized={true}
           />
         </div>
         <div className="w-full md:w-2/5 md:pl-0 mt-4 md:mt-0 flex flex-col justify-between">
