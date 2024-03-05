@@ -26,7 +26,11 @@ const Project: React.FC<ProjectProps> = ({
     <div className="pb-40">
       <div className="flex flex-col md:flex-row md:space-x-4">
         <div className="w-full md:w-3/5">
-          <img className="w-full shadow-lg" src={image} alt={title} />
+          <img
+            className="w-full shadow-lg rounded-lg"
+            src={image}
+            alt={title}
+          />
         </div>
         <div className="w-full md:w-2/5 md:pl-0 mt-4 md:mt-0">
           <h3 className="h3">{title}</h3>

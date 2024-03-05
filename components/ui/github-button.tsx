@@ -5,7 +5,9 @@ import { Button } from "@/components/ui/button";
 export function GithubButton() {
   return (
     <Button variant="accent">
-      <Github className="h-4 w-4 " />
+      <a href="https://github.com/SRStoyanov">
+        <Github className="h-4 w-4 " />
+      </a>
     </Button>
   );
 }

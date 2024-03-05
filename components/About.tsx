@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="">
+    <div className="pt-40">
       <h2 className="h2">About me</h2>
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-3/5">
@@ -12,13 +12,13 @@ const About = () => {
               the internet. I got here after
             </p>
             <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-              <li>
+              <li className="li">
                 building a{" "}
                 <a href="https://minilogues.net" className="text-link">
                   blog on Squarespace
                 </a>
               </li>
-              <li>
+              <li className="li">
                 taking a{" "}
                 <a
                   href="https://www.coursera.org/specializations/ui-ux-design"
@@ -27,7 +27,7 @@ const About = () => {
                   CalArts course on UI/UX design
                 </a>
               </li>
-              <li>
+              <li className="li">
                 taking{" "}
                 <a
                   href="https://www.udemy.com/course/the-web-developer-bootcamp/?couponCode=ST22FS22724"
@@ -37,12 +37,12 @@ const About = () => {
                 </a>
                 , and finally
               </li>
-              <li>
+              <li className="li">
                 getting a{" "}
                 <a href="https://softuni.bg/curriculum" className="text-link">
                   software engineering degree
                 </a>{" "}
-                focused on web development with JavaScript from SoftUni .
+                focused on web development with JavaScript from SoftUni.
               </li>
             </ul>
             <p className="p">

@@ -5,7 +5,9 @@ import { Button } from "@/components/ui/button";
 export function LinkedInButton() {
   return (
     <Button variant="accent">
-      <Linkedin className="h-4 w-4 " />
+      <a href="https://www.linkedin.com/in/sava-stoyanov/">
+        <Linkedin className="h-4 w-4 " />
+      </a>
     </Button>
   );
 }

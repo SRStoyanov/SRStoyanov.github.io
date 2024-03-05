@@ -15,9 +15,15 @@ export default function Home() {
           className="max-w-4xl flex flex-col justify-center items-center mx-auto"
         >
           <Hero />
-          <About />
-          <Projects />
-          <Contact />
+          <div id="about">
+            <About />
+          </div>
+          <div id="projects">
+            <Projects />
+          </div>
+          <div id="contact">
+            <Contact />
+          </div>
         </div>
       </div>
       <Footer />
