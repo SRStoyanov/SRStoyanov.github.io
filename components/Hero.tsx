@@ -10,8 +10,8 @@ const Hero = () => {
       </h1>
       <div className="bg-primary rounded-lg p-4 my-10">
         <p className="p">
-          I'm a software engineer building (and occasionally designing) digital
-          experiences. I'm also a poet and a political scientist.
+          I&apos;m a software engineer building (and occasionally designing)
+          digital experiences. I&apos;m also a poet and a political scientist.
         </p>
       </div>
       <Socials />

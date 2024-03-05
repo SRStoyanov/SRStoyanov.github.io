@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -33,7 +34,7 @@ const About = () => {
                   href="https://www.udemy.com/course/the-web-developer-bootcamp/?couponCode=ST22FS22724"
                   className="text-link"
                 >
-                  Colt Steele's web dev bootcamp
+                  Colt Steele&apos;s web dev bootcamp
                 </a>
                 , and finally
               </li>
@@ -76,7 +77,9 @@ const About = () => {
               </a>
               .
             </p>
-            <p className="p">Here is what I've been working with recently:</p>
+            <p className="p">
+              Here is what I&apos;ve been working with recently:
+            </p>
           </div>
           <ul className="flex flex-wrap my-6 list-none [&>li]:mt-2">
             <li className="inline-flex border border-gray-300 rounded-md px-2 py-1 mr-2">
@@ -100,10 +103,12 @@ const About = () => {
           </ul>
         </div>
         <div className="w-full md:w-2/5 md:ml-3 rounded-lg overflow-hidden">
-          <img
+          <Image
             src="/profile.jpg"
             alt="Photo of Sava Stoyanov"
             className="rounded-lg"
+            width={500}
+            height={500}
           />
         </div>
       </div>

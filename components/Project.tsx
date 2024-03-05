@@ -1,6 +1,7 @@
 import React from "react";
 import { Figma, Github, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export type ProjectProps = {
   title: string;
@@ -23,10 +24,12 @@ const Project: React.FC<ProjectProps> = ({
     <div className="pb-40">
       <div className="flex flex-col md:flex-row md:space-x-4">
         <div className="w-full md:w-3/5">
-          <img
+          <Image
             className="w-full shadow-lg rounded-lg"
             src={image}
             alt={title}
+            width={500}
+            height={300}
           />
         </div>
         <div className="w-full md:w-2/5 md:pl-0 mt-4 md:mt-0 flex flex-col justify-between">
