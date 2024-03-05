@@ -1,9 +1,9 @@
 import React from "react";
-import { MailButton } from "@/components/ui/mail-button";
+import { Socials } from "@/components//Socials";
 
 const Hero = () => {
   return (
-    <div className="my-60">
+    <div className="my-36 md:my-60">
       <h2 className="h2">Hi, my name is</h2>
       <h1 className="h1">
         Sava Stoyanov. <br />I create things for the web.
@@ -14,7 +14,7 @@ const Hero = () => {
           experiences. I'm also a poet and a political scientist.
         </p>
       </div>
-      <MailButton />
+      <Socials />
     </div>
   );
 };

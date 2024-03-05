@@ -1,5 +1,5 @@
 import React from "react";
-import { MailButton } from "@/components/ui/mail-button";
+import { Socials } from "@/components//Socials";
 
 const Contact = () => {
   return (
@@ -11,7 +11,7 @@ const Contact = () => {
           hesitate to reach out if you have something in mind!
         </p>
       </div>
-      <MailButton />
+      <Socials />
     </div>
   );
 };
