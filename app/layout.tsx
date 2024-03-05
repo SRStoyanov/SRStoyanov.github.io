@@ -9,7 +9,11 @@ export const metadata: Metadata = {
   title: "Sava Stoyanov's portfolio",
 };
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
