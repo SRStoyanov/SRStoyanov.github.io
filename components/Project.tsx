@@ -1,12 +1,10 @@
 import React from "react";
-import { Figma } from "lucide-react";
-import { Github } from "lucide-react";
-import { ExternalLink } from "lucide-react";
+import { Figma, Github, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export type ProjectProps = {
   title: string;
   description: string;
-  figmaLink: string;
   repoLink: string;
   liveLink: string;
   techStack: string[];
@@ -16,7 +14,6 @@ export type ProjectProps = {
 const Project: React.FC<ProjectProps> = ({
   title,
   description,
-  figmaLink,
   repoLink,
   liveLink,
   techStack,
@@ -32,40 +29,40 @@ const Project: React.FC<ProjectProps> = ({
             alt={title}
           />
         </div>
-        <div className="w-full md:w-2/5 md:pl-0 mt-4 md:mt-0">
-          <h3 className="h3">{title}</h3>
+        <div className="w-full md:w-2/5 md:pl-0 mt-4 md:mt-0 flex flex-col justify-between">
+          <div>
+            <h3 className="h3">{title}</h3>
+            <ul className="flex flex-wrap mt-2 mb-6 list-none [&>li]:mt-2">
+              {techStack.map((tech, index) => (
+                <li
+                  key={index}
+                  className="inline-flex border border-gray-300 rounded-md px-2 py-1 mr-2"
+                >
+                  {tech}
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="bg-primary rounded-lg p-4">
             <p className="p">{description}</p>
           </div>
-          <ul className="flex flex-wrap my-6 list-none [&>li]:mt-2">
-            {techStack.map((tech, index) => (
-              <li
-                key={index}
-                className="inline-flex border border-gray-300 rounded-md px-2 py-1 mr-2"
-              >
-                {tech}
-              </li>
-            ))}
-          </ul>
-          <div className="bg-accent rounded-lg p-4 inline-block">
-            <ul className="flex space-x-4">
-              <li>
-                <a href={figmaLink}>
-                  <Figma />
-                </a>
-              </li>
-              <li>
+
+          <ul className="flex flex-wrap space-x-2 my-4 list-none [&>li]:mt-2">
+            <li className="inline-flex">
+              <Button variant="accent">
                 <a href={repoLink}>
-                  <Github />
+                  <Github className="h-4 w-4 " />
                 </a>
-              </li>
-              <li>
+              </Button>
+            </li>
+            <li className="inline-flex">
+              <Button variant="accent">
                 <a href={liveLink}>
-                  <ExternalLink />
+                  <ExternalLink className="h-4 w-4 " />
                 </a>
-              </li>
-            </ul>
-          </div>
+              </Button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
