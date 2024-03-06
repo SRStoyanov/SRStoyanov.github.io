@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeToggle } from "./ui/theme-toggle";
 import Image from "next/image";
+import { DownloadLink } from "./ui/download-link";
 
 const Navbar = () => {
   return (
@@ -30,9 +31,7 @@ const Navbar = () => {
         <a href="#contact" className="mr-2 sm:mr-8">
           Contact
         </a>
-        <a href="/Stoyanov-Resume-24.pdf" download>
-          <button>Resume</button>
-        </a>
+        <DownloadLink />
       </div>
     </nav>
   );
