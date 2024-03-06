@@ -8,7 +8,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sava Stoyanov's portfolio",
-  icon: "favicon.ico",
 };
 
 export default function RootLayout({
@@ -18,9 +17,6 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <html lang="en" suppressHydrationWarning>
         <body>
           <ThemeProvider
