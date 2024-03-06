@@ -52,13 +52,13 @@ const Project: React.FC<ProjectProps> = ({
           </div>
 
           <ul className="flex flex-wrap space-x-2 my-4 list-none [&>li]:mt-2">
-            <li className="inline-flex">
+            {/* <li className="inline-flex">
               <Button variant="accent">
                 <a href={repoLink}>
                   <Github className="h-4 w-4 " />
                 </a>
               </Button>
-            </li>
+            </li> */}
             <li className="inline-flex">
               <Button variant="accent">
                 <a href={liveLink}>
