@@ -10,6 +10,8 @@ export type ProjectProps = {
   liveLink: string;
   techStack: string[];
   image: string;
+  showRepoLink: boolean;
+  showLiveLink: boolean;
 };
 
 const Project: React.FC<ProjectProps> = ({
@@ -19,6 +21,8 @@ const Project: React.FC<ProjectProps> = ({
   liveLink,
   techStack,
   image,
+  showRepoLink,
+  showLiveLink,
 }) => {
   return (
     <div className="pb-40">
@@ -52,20 +56,24 @@ const Project: React.FC<ProjectProps> = ({
           </div>
 
           <ul className="flex flex-wrap space-x-2 my-4 list-none [&>li]:mt-2">
-            {/* <li className="inline-flex">
-              <Button variant="accent">
-                <a href={repoLink}>
-                  <Github className="h-4 w-4 " />
-                </a>
-              </Button>
-            </li> */}
-            <li className="inline-flex">
-              <Button variant="accent">
-                <a href={liveLink}>
-                  <ExternalLink className="h-4 w-4 " />
-                </a>
-              </Button>
-            </li>
+            {showRepoLink && (
+              <li className="inline-flex">
+                <Button variant="accent">
+                  <a href={repoLink}>
+                    <Github className="h-4 w-4 " />
+                  </a>
+                </Button>
+              </li>
+            )}
+            {showLiveLink && (
+              <li className="inline-flex">
+                <Button variant="accent">
+                  <a href={liveLink}>
+                    <ExternalLink className="h-4 w-4 " />
+                  </a>
+                </Button>
+              </li>
+            )}
           </ul>
         </div>
       </div>

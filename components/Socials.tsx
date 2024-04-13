@@ -18,9 +18,9 @@ export function Socials() {
         <li className="inline-flex ">
           <GithubButton />
         </li>
-        <li className="inline-flex ">
+        {/* <li className="inline-flex ">
           <CodepenButton />
-        </li>
+        </li> */}
         {/* <li className="inline-flex">
           <DribbbleButton />
         </li> */}

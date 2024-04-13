@@ -92,7 +92,13 @@ const About = () => {
               JavaScript
             </li>
             <li className="inline-flex border border-gray-300 rounded-md px-2 py-1 mr-2">
+              TypeScript
+            </li>
+            <li className="inline-flex border border-gray-300 rounded-md px-2 py-1 mr-2">
               React
+            </li>
+            <li className="inline-flex border border-gray-300 rounded-md px-2 py-1 mr-2">
+              Angular
             </li>
             <li className="inline-flex border border-gray-300 rounded-md px-2 py-1 mr-2">
               Firebase
