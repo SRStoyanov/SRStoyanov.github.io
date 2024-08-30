@@ -106,6 +106,21 @@ const About = () => {
             <li className="inline-flex border border-gray-300 rounded-md px-2 py-1 mr-2">
               Tailwind
             </li>
+            <li className="inline-flex border border-gray-300 rounded-md px-2 py-1 mr-2">
+              Python
+            </li>
+            <li className="inline-flex border border-gray-300 rounded-md px-2 py-1 mr-2">
+              NumPy
+            </li>
+            <li className="inline-flex border border-gray-300 rounded-md px-2 py-1 mr-2">
+              pandas
+            </li>
+            <li className="inline-flex border border-gray-300 rounded-md px-2 py-1 mr-2">
+              matplotlib
+            </li>
+            <li className="inline-flex border border-gray-300 rounded-md px-2 py-1 mr-2">
+              seaborn
+            </li>
           </ul>
         </div>
         <div className="w-full md:w-2/5 md:ml-3 rounded-lg overflow-hidden">
